@@ -1,0 +1,186 @@
+.section-path {
+  background-color: #ececec;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20rem 0; }
+
+.card-container {
+  width: 22rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  perspective: 100rem; }
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: all 0.8s;
+  transform-style: preserve-3d;
+  margin: 2rem; }
+
+.card-container:hover .card {
+  transform: rotateY(180deg); }
+
+.card figure {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.416); }
+
+.card .front {
+  background: #005C97;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #363795, #005C97);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #363795, #005C97);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: pink; }
+
+.card .back {
+  background: #fc4a1a;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right bottom, #f7b733, #fc4a1a);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right bottom, #f7b733, #fc4a1a);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transform: rotateY(180deg);
+  backface-visibility: hidden; }
+  .card .back p {
+    margin-top: 40%; }
+
+.front img {
+  background-blend-mode: lighten;
+  width: 80%; }
+
+.button {
+  position: relative;
+  padding: 1em 1.5em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  margin: 1em 0.8em; }
+  .button.type3 {
+    color: #435a6b; }
+  .button.type3::after, .button.type3::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 2px solid;
+    transition: all 0.6s ease;
+    border-radius: 2px; }
+  .button.type3::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #435a6b;
+    border-right-color: #435a6b; }
+  .button.type3::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #435a6b;
+    border-left-color: #435a6b; }
+  .button.type3:hover:after, .button.type3:hover:before {
+    border-bottom-color: #435a6b;
+    border-right-color: #435a6b;
+    border-top-color: #435a6b;
+    border-left-color: #435a6b;
+    width: 100%;
+    height: 100%; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  color: #fff;
+  overflow-x: hidden; }
+
+.v-header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  z-index: 5; }
+
+.header-overlay {
+  z-index: 10;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #49398b;
+  opacity: 0.85; }
+
+.header-overlay div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%; }
+
+.header-overlay p {
+  font-size: 50px;
+  margin-bottom: 3rem; }
+
+.header-overlay a {
+  background-color: #787978;
+  color: #fff;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  text-decoration: none; }
+
+.header-overlay a:hover {
+  opacity: 0.85;
+  box-shadow: 1px 2px 2px #1f1c1c; }
+
+.container {
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center; }
+
+.fullscreen-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; }
+
+.fullscreen-video-wrap video {
+  min-width: 100%;
+  min-height: 100%; }
+
+section {
+  color: black; }
+
+.section-comment {
+  padding-top: 100px;
+  background-color: coral; }

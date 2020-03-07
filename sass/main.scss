@@ -1,0 +1,94 @@
+@import "section/path";
+
+$background-grey:rgb(236, 236, 236);
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color:#fff;
+    overflow-x: hidden;
+
+}
+
+.v-header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+}
+
+.header-overlay{
+    z-index: 10;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(73, 57, 139);
+    opacity: 0.85;
+    
+} 
+.header-overlay div
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+.header-overlay p{
+    font-size: 50px;
+    margin-bottom: 3rem;
+}
+.header-overlay a{
+    background-color: rgb(120, 121, 120);
+    color: #fff;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.header-overlay a:hover{
+    opacity: 0.85;
+    box-shadow: 1px 2px 2px rgb(31, 28, 28);
+}
+
+.container{
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.fullscreen-video-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.fullscreen-video-wrap video{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+section{
+    color: black;
+    
+}
+
+.section-comment{
+    padding-top: 100px;
+    background-color: coral;
+}
