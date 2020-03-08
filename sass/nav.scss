@@ -1,0 +1,42 @@
+$purple:rgb(73, 57, 139);
+
+
+.main-nav{
+    z-index: 100;
+    text-align: center;
+    background-color: $purple;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+}
+.nav-list{
+    display: block;
+    
+}
+
+.nav-container li{
+    list-style-type: none;
+    float: left;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    text-align: center;
+    margin-left: 9rem;
+
+    & a{
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding: 1rem 1rem;
+        border-radius: 3px;
+        transition: background-color 1s ease-out;
+        &:hover{
+            background-color: rgba(247, 247, 247, 0.4);
+            color: $purple;
+        }
+    }
+}
+
+
+

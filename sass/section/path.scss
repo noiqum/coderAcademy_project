@@ -137,3 +137,13 @@ $color-border: #435a6b;
 
 
 }
+@keyframes anim{
+    from{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
