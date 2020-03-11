@@ -5,10 +5,11 @@ $purple:rgb(73, 57, 139);
     z-index: 100;
     text-align: center;
     background-color: $purple;
-    top: 0;
+    top: -100px;
     left: 0;
     position: fixed;
     width: 100%;
+    scroll-behavior: smooth;
 }
 .nav-list{
     display: block;

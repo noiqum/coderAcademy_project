@@ -1,9 +1,7 @@
 @import "section/path";
 @import "./nav";
-
-$background-grey:rgb(236, 236, 236);
-$purple:rgb(73, 57, 139);
-
+@import "section/comment";
+@import "values";
 
 
 *{
@@ -90,7 +88,3 @@ section{
     
 }
 
-.section-comment{
-    padding-top: 100px;
-    background-color: coral;
-}
