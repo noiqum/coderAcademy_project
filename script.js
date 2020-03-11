@@ -1,3 +1,5 @@
+
+
 window.onscroll=function () {wScroll()};
 
 function wScroll() {
@@ -7,3 +9,4 @@ function wScroll() {
         document.getElementById("nav-bar").style.top="-100px"
     }
 };
+

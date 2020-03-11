@@ -202,6 +202,121 @@
   .story:hover .story__img-2 {
     filter: blur(3px); }
 
+.faq {
+  padding: 6rem 0;
+  background-color: #ececec;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column; }
+  .faq h3 {
+    text-transform: uppercase;
+    color: #49398b;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+
+.question__button {
+  background-color: #ececec;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  padding: 1rem 0;
+  padding-right: 10rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(124, 123, 123, 0.562); }
+  .question__button-active {
+    background-color: #49398b;
+    opacity: 0.8; }
+  .question__button-active::before {
+    content: "\2796"; }
+  .question__button::before {
+    content: '\02795';
+    color: white;
+    font-size: 1rem;
+    float: left;
+    margin-right: 1rem; }
+  .question__button:hover {
+    background-color: #49398b;
+    opacity: 0.8;
+    color: #fff; }
+
+.content {
+  border-top: 1px solid rgba(124, 123, 123, 0.562);
+  padding: 2rem 1rem;
+  display: none;
+  overflow: hidden; }
+
+.acc {
+  padding: 6rem 0;
+  background-color: #ececec;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-decoration: none;
+  list-style: none;
+  color: #fff; }
+  .acc h3 {
+    text-transform: uppercase;
+    color: #49398b;
+    font-size: 2rem;
+    margin-bottom: 3rem; }
+
+.accordion {
+  margin-left: 1.6rem;
+  margin-right: 1.2rem; }
+
+.accordion__item {
+  border-radius: .4rem;
+  margin-bottom: 1rem;
+  background-color: #ececec;
+  padding: 1rem;
+  box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1); }
+  .accordion__item > a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    padding: 1rem 0; }
+  .accordion__item:target .answer {
+    max-height: 20rem;
+    background-color: #b9b9b9; }
+  .accordion__item:target .ion-md-remove {
+    display: block; }
+  .accordion__item:target .ion-md-add {
+    display: none; }
+
+.ion-md-remove {
+  display: none; }
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #ececec;
+  color: black;
+  transition: max-height 650ms; }
+  .answer::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0.6rem;
+    height: 90%;
+    transform: translateY(-50%);
+    background-color: blueviolet; }
+  .answer > p {
+    padding: 1rem; }
+
 * {
   box-sizing: border-box;
   margin: 0;

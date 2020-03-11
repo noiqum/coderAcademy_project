@@ -1,0 +1,66 @@
+@import "../values";
+
+
+.faq{
+    padding: 6rem 0;
+    background-color:$background-grey;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    & h3{
+        text-transform: uppercase;
+        color: $purple;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.question{
+    
+    &__button{
+
+        background-color: $background-grey;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+        width:100%;
+        padding: 1rem 0;
+        padding-right: 10rem;
+        font-size: 1.2rem;
+        border-bottom: 1px solid rgba(124, 123, 123, 0.562);
+        &-active{
+            background-color: $purple;
+            opacity: 0.8;
+        }
+        &-active::before{
+            content: "\2796";
+            
+        }
+
+        &::before{
+            content: '\02795';
+            color: white;
+            font-size: 1rem;
+            float: left;
+            margin-right: 1rem;
+
+        }
+        &:hover{
+            background-color: $purple;
+            opacity: 0.8;
+            color: #fff;
+        }
+        
+    }
+}
+.content{
+    border-top: 1px solid rgba(124, 123, 123, 0.562);
+    padding: 2rem 1rem;
+    display: none;
+    overflow: hidden;
+}
