@@ -452,6 +452,93 @@
       transform: translateY(2px);
       box-shadow: 0 1rem 1rem rgba(84, 83, 85, 0.568); }
 
+.footer {
+  padding: 9rem 0;
+  background-color: rgba(7, 1, 6, 0.945); }
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 90%; }
+    .footer__container > div {
+      margin-left: 1rem;
+      color: #fff;
+      text-transform: uppercase; }
+      .footer__container > div > p {
+        font-size: 0.6rem;
+        color: gray;
+        padding-top: 1rem; }
+    .footer__container-menu {
+      text-decoration: none;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start; }
+      .footer__container-menu li a {
+        text-decoration: none;
+        color: gray; }
+      .footer__container-menu-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding-top: 1rem; }
+    .footer__container-post-list {
+      text-decoration: none;
+      list-style: none;
+      color: gray;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding-top: 1rem; }
+      .footer__container-post-list a {
+        margin-top: 1rem;
+        color: gray; }
+        .footer__container-post-list a:hover {
+          color: indigo;
+          opacity: 0.85; }
+    .footer__container-newsletter-container {
+      color: #cfc2c2;
+      margin-top: 1rem; }
+      .footer__container-newsletter-container::after {
+        content: 'Sign Up';
+        width: 70px;
+        height: 20px;
+        color: gray;
+        background-color: indigo;
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+        padding: 5px; }
+    .footer__container-newsletter-input {
+      color: #424141;
+      padding: 0.7rem 1.7rem;
+      padding-left: 3px;
+      width: 200px;
+      height: 30px; }
+
+.svg-facebook,
+.svg-twitter,
+.svg-reddit {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.8rem;
+  fill: grey;
+  transition: all 0.2s ease; }
+
+.svg-facebook:hover,
+.svg-twitter:hover,
+.svg-reddit:hover {
+  fill: mediumpurple; }
+
 * {
   box-sizing: border-box;
   margin: 0;
