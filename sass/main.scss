@@ -1,9 +1,8 @@
 @import "section/path";
-@import "./nav";
+@import "nav";
 @import "section/comment";
 @import "values";
 @import "section/faq";
-@import "section/acc";
 @import "section/brochure";
 @import "section/footer";
 
@@ -85,6 +84,7 @@ body{
 .fullscreen-video-wrap video{
     min-width: 100%;
     min-height: 100%;
+    object-fit: scale-down;
 }
 
 section{

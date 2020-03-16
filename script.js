@@ -42,7 +42,23 @@ window.onload=function () {
        }
    };
 
-    
+    //hamburger navigation vertical navbar functionality
+
+    const hamburger =document.querySelector(".burger");
+    const navbarVertical=document.querySelector(".nav-list");
+    const hamburgerLines=document.querySelectorAll(".burger-line");
+    console.log(hamburgerLines);
+
+    hamburger.addEventListener("click",navy);
+
+    function navy() {
+        navbarVertical.classList.toggle("nav-list-toggle");
+        hamburgerLines[0].classList.toggle("line1");
+        hamburgerLines[1].classList.toggle("line2");
+        hamburgerLines[2].classList.toggle("line3");
+    };
+
+
     
         
     
@@ -60,7 +76,7 @@ function wScroll() {
         document.getElementById("nav-bar").style.top="0";
         document.getElementById("nav-button").style.right="0";
     }else{
-        document.getElementById("nav-bar").style.top="-100px";
+        document.getElementById("nav-bar").style.top="-1000px";
         document.getElementById("nav-button").style.right="-100px";
     }
 };
