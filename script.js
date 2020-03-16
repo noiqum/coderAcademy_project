@@ -25,9 +25,11 @@ window.onscroll=function () {wScroll()};
 
 function wScroll() {
     if(document.body.scrollTop> 100 || document.documentElement.scrollTop> 100){
-        document.getElementById("nav-bar").style.top="0"
+        document.getElementById("nav-bar").style.top="0";
+        document.getElementById("nav-button").style.right="0";
     }else{
-        document.getElementById("nav-bar").style.top="-100px"
+        document.getElementById("nav-bar").style.top="-100px";
+        document.getElementById("nav-button").style.right="-100px";
     }
 };
 
