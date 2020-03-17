@@ -606,7 +606,8 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    border-radius: 5px; }
   .about__modal-close {
     position: absolute;
     top: 0;
