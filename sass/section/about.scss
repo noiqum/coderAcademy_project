@@ -1,0 +1,52 @@
+@import "../values";
+
+.about__modal{
+   position: absolute;
+   margin-left: 0px;
+   top: 0;
+   left: 0;
+   width: 30%;
+   height: 100vh;
+   transform: translateX(-100%);
+    background-color: rgba(27, 27, 27, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(212, 211, 211);
+    transition: transform 0.5s ease-in;
+
+    & p{
+        padding: 2rem;
+        line-height: 2;
+    }
+    &-frame{
+        position: relative;
+        background-color: $purple;
+        display: flex;
+        width: 80%;
+        height: 80%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &-close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 2rem;
+        margin-right: 2rem;
+        padding: 0.5rem 1.2rem;
+        background-color: indigo;
+        color:inherit;
+        text-align: center;
+        display: inline-block;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+}
+
+.about-new{
+    transform: translateX(10%);
+}

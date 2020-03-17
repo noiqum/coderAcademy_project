@@ -8,11 +8,23 @@
     <script src="script.js"></script>
     <link rel="shortcut icon" href="code-icon.svg" type="image/x-icon">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
   
     <header id="home"class="v-header container">
         <nav id="nav-bar" class="main-nav">
+            <div class="about__modal">
+                <div class="about__modal-close">Close</div>
+                <div class="about__modal-frame">
+                    
+                    <h4>Coder Academy</h4>
+                    <p class="about__modal-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed molestias fuga mollitia, dolores earum animi sequi laudantium molestiae ab assumenda. Neque nihil, laboriosam explicabo doloremque aliquam aliquid numquam rem dicta, voluptate officia totam. Suscipit, voluptatum deserunt libero et unde labore deleniti assumenda cumque, quaerat accusamus facilis, dicta perferendis totam commodi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus nihil at quas eveniet quo maiores?</p>
+                </div>
+            </div>
             <div class="logo">
                 <h4>Coder Academy</h4>
             </div>
@@ -22,7 +34,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#path">programmes</a></li>
                     <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#about">About Us</a></li>
+                    <li><a  id="about"href="#about">About Us</a></li>
                     </ul>
                 </div>
                 
@@ -40,6 +52,7 @@
                 </a>
             </div>
         </div>
+        
         <div class="fullscreen-video-wrap">
             <video src="code.mp4" autoplay="true" muted="true" loop="true"></video>
         </div>

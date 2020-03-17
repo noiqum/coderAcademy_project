@@ -5,12 +5,14 @@
 @import "section/faq";
 @import "section/brochure";
 @import "section/footer";
+@import "section/about";
 
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -84,7 +86,7 @@ body{
 .fullscreen-video-wrap video{
     min-width: 100%;
     min-height: 100%;
-    object-fit: scale-down;
+    object-fit: contain;
 }
 
 section{

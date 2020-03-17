@@ -197,7 +197,8 @@
   font-size: 16px;
   text-transform: uppercase;
   min-height: 8vh;
-  padding: 1rem 1rem; }
+  padding: 1rem 1rem;
+  font-family: 'Cairo', sans-serif; }
 
 @media screen and (max-width: 1000px) {
   .nav-list {
@@ -249,7 +250,9 @@
   .line2 {
     display: none; }
   .line3 {
-    transform: translateY(-5px) rotate(-45deg); } }
+    transform: translateY(-5px) rotate(-45deg); }
+  .nav__button-arrow {
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%); } }
 
 .section-comment {
   padding: 15rem 0;
@@ -576,10 +579,56 @@
 .svg-reddit:hover {
   fill: mediumpurple; }
 
+.about__modal {
+  position: absolute;
+  margin-left: 0px;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100vh;
+  transform: translateX(-100%);
+  background-color: rgba(27, 27, 27, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #d4d3d3;
+  transition: transform 0.5s ease-in; }
+  .about__modal p {
+    padding: 2rem;
+    line-height: 2; }
+  .about__modal-frame {
+    position: relative;
+    background-color: #49398b;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .about__modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    padding: 0.5rem 1.2rem;
+    background-color: indigo;
+    color: inherit;
+    text-align: center;
+    display: inline-block;
+    border-radius: 20px;
+    cursor: pointer; }
+
+.about-new {
+  transform: translateX(10%); }
+
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
 
 html {
   scroll-behavior: smooth; }
@@ -645,7 +694,7 @@ body {
 .fullscreen-video-wrap video {
   min-width: 100%;
   min-height: 100%;
-  object-fit: scale-down; }
+  object-fit: contain; }
 
 section {
   color: black; }

@@ -99,7 +99,8 @@ $purple:rgb(73, 57, 139);
     text-transform: uppercase;
     min-height: 8vh;
     padding: 1rem 1rem;
-}
+    font-family: 'Cairo', sans-serif;
+    }
 
 @media screen and (max-width:1000px){
     .nav-list{
@@ -175,5 +176,8 @@ $purple:rgb(73, 57, 139);
         transform:  translateY(-5px) rotate(-45deg);
     }
 
+    .nav__button-arrow{
+        clip-path: polygon(0% 50%,50% 0%,100% 50%);
+    }
 }
 

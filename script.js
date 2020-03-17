@@ -47,7 +47,7 @@ window.onload=function () {
     const hamburger =document.querySelector(".burger");
     const navbarVertical=document.querySelector(".nav-list");
     const hamburgerLines=document.querySelectorAll(".burger-line");
-    console.log(hamburgerLines);
+    
 
     hamburger.addEventListener("click",navy);
 
@@ -59,7 +59,17 @@ window.onload=function () {
     };
 
 
-    
+    //about us nav link modal popup function
+
+    const about = document.getElementById("about");
+    const close =document.querySelector(".about__modal-close");
+    const modal = document.querySelector(".about__modal");
+    about.addEventListener("click",aboutModal);
+    close.addEventListener("click",aboutModal);
+
+    function aboutModal() {
+        modal.classList.toggle("about-new");
+    };
         
     
     
