@@ -51,3 +51,11 @@
 .about-new{
     transform: translateX(10%);
 }
+
+
+@media screen and (max-width:786px){
+
+    .about-new{
+        transform: translateX(50%);
+    }
+}

@@ -110,6 +110,7 @@ $purple:rgb(73, 57, 139);
         justify-content: center;
         flex-direction: row;
         & li{
+
             padding: 0.7rem 1rem;
         }
     }
@@ -123,7 +124,7 @@ $purple:rgb(73, 57, 139);
 
     .nav-list{
         position: absolute;
-        width: 30%;
+        width: 33%;
         height: 92vh;
         top:8vh;
         right: 0;
@@ -135,10 +136,12 @@ $purple:rgb(73, 57, 139);
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
+        justify-content: center;
+        
         & li{
             margin-bottom: 6rem;
-            font-size: 1.5rem;
-            width: 100%;
+            font-size: 1.2rem;
+            width: 80%;
         }
         }
     }
