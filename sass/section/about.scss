@@ -57,5 +57,9 @@
 
     .about-new{
         transform: translateX(50%);
+        line-height: unset;
+        font-size: 1rem;
+        width: 40%;
+
     }
 }

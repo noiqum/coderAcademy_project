@@ -182,5 +182,12 @@ $purple:rgb(73, 57, 139);
     .nav__button-arrow{
         clip-path: polygon(0% 50%,50% 0%,100% 50%);
     }
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 

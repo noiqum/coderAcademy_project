@@ -253,7 +253,12 @@
   .line3 {
     transform: translateY(-5px) rotate(-45deg); }
   .nav__button-arrow {
-    clip-path: polygon(0% 50%, 50% 0%, 100% 50%); } }
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%); }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; } }
 
 .section-comment {
   padding: 15rem 0;
@@ -628,7 +633,10 @@
 
 @media screen and (max-width: 786px) {
   .about-new {
-    transform: translateX(50%); } }
+    transform: translateX(50%);
+    line-height: unset;
+    font-size: 1rem;
+    width: 40%; } }
 
 * {
   box-sizing: border-box;
